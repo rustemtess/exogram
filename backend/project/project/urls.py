@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib.auth import views as auth_views
 
 from rest_framework import routers
-from chat.views import ChatViewSet, MessageViewSet, chat_viewset
 from accounts.views import UserViewSet, user_viewset
 
 router = routers.DefaultRouter()
